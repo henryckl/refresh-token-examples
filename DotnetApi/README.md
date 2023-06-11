@@ -1,4 +1,4 @@
-# Refresh Token Example
+# Refresh token example with dotnet 7
 
 ## create project
   - dotnet new webapi -o DotnetApi
