@@ -66,7 +66,7 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-builder.Services.AddSingleton<ITokenService, TokenService>();
+builder.Services.AddTransient<ITokenService, TokenService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
