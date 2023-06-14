@@ -1,12 +1,12 @@
 import fastify from 'fastify'
 
-const server = fastify()
+const app = fastify()
 
-server.get('/user', async (request, reply) => {
+app.get('/user', async (request, reply) => {
   return 'user name\n'
 })
 
-server.listen({ port: 3333 }, (err, address) => {
+app.listen({ port: 3333 }, (err, address) => {
   if (err != null) {
     console.error(err)
     process.exit(1)
